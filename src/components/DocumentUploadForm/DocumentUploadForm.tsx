@@ -55,7 +55,7 @@ function DocumentUploadForm() {
   return (
     <div className="flex h-screen justify-center items-center text-primary-dark select-none">
       <form
-        className="p-10 rounded-3xl w-8/12 bg-white shadow-lg"
+        className="p-10 rounded-3xl w-7/12 bg-white shadow-lg"
         onSubmit={submitForm}
       >
         <div className="w-full">

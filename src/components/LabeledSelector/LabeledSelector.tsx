@@ -8,9 +8,9 @@ interface SelectorProps {
 
 function LabeledSelector({ label, options }: SelectorProps) {
   return (
-    <div className="flex items-center mt-4">
+    <div className="flex items-center mt-5">
       <p className="grow">{label}</p>
-      <select name="client-select-1" id="client-select-1" className="w-6/12">
+      <select name="client-select-1" id="client-select-1" className="w-5/12">
         {options.map((option) => {
           return <option>{option}</option>;
         })}
