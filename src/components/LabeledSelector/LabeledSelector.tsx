@@ -1,4 +1,5 @@
 import React from "react";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 interface SelectorProps {
   label: string;
@@ -14,6 +15,7 @@ function LabeledSelector({ label, options }: SelectorProps) {
           return <option>{option}</option>;
         })}
       </select>
+      <ClockIcon className="w-6 ml-4" />
     </div>
   );
 }
