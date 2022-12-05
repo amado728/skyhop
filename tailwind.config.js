@@ -12,6 +12,10 @@ module.exports = {
         secondary: "#fa9d26", //Orange
         tertiary: "#30aa53", //Green
       },
+      backgroundImage: {
+        "dashed-img":
+          "url(\"data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23333' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='9' stroke-linecap='square'/%3e%3c/svg%3e\")",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

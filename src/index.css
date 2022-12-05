@@ -6,3 +6,17 @@
 body {
   background-color: #b3b3b3;
 }
+
+@layer base {
+  [type="text"],
+  select {
+    @apply w-full rounded-lg py-2 cursor-pointer;
+  }
+  button {
+    @apply text-white rounded-md cursor-pointer;
+  }
+  [type="radio"] {
+    @apply w-6 h-6 bg-red-500 accent-primary focus:shadow-none focus:ring-offset-0 focus:ring-transparent checked:accent-primary focus:accent-primary active:accent-primary hover:accent-primary;
+    appearance: radio;
+  }
+}
