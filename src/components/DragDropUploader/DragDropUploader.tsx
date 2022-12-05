@@ -134,7 +134,13 @@ function DragDropUploader({ name, handleFileUpload, allowedFormats }: Props) {
               ref={uploadRef}
               className={`h-1 bg-secondary rounded-sm absolute z-5 w-0`}
             ></div>
-            <div className="h-1 bg-gray-200 rounded-sm w-[525px]"></div>
+            <div
+              className={`h-1 bg-gray-200 rounded-sm w-[${
+                uploadRef.current
+                  ? (uploadRef.current.parentNode as HTMLElement).clientWidth
+                  : 0
+              }px]`}
+            ></div>
           </div>
         </div>
       </div>

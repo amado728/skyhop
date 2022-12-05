@@ -38,13 +38,13 @@ function DocumentUploadForm() {
     if (form.importName === "Select Import Name" || "") return false;
     if (form.manifest === undefined) return false;
     if (form.client === "single") {
-      if (form.clients[0] === "") {
+      if (form.clients[0] === "Select Client") {
         validated = false;
       }
     }
     if (form.client === "multiple") {
       for (let i in form.clients) {
-        if (form.clients[i] === "") {
+        if (form.clients[i] === "Select Client") {
           validated = false;
         }
       }
